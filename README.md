@@ -1,6 +1,6 @@
 # My Website
 
-My personal website, and my first project on GitHub.
+testing hi 
 
 - **Live site:** https://YOUR-USERNAME.github.io/my-website/ (update this after Lesson 3)
 - **Built with:** plain HTML and CSS, no tools or frameworks needed
