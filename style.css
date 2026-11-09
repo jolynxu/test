@@ -1,0 +1,108 @@
+/* ---------- Colors (change these to make the site yours!) ---------- */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --text: #1d1d1f;
+  --muted: #6b6b70;
+  --accent: #2f6f4f;
+  --border: #e6e3dc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141615;
+    --surface: #1d201e;
+    --text: #ecebe7;
+    --muted: #a3a39e;
+    --accent: #7cc49d;
+    --border: #2c302d;
+  }
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 18px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover { color: var(--accent); }
+
+/* ---------- Hero ---------- */
+.hero { padding: 56px 0 40px; }
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 4px 0 12px;
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  line-height: 1.1;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+
+.card h2 { margin-top: 0; font-size: 1.25rem; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 32px 20px;
+  border-top: 1px solid var(--border);
+}
